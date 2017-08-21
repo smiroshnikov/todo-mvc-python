@@ -23,7 +23,7 @@ def step(context, text):
     context.browser.find_element_by_xpath('//button').click()
 
 
-@then("page include text '{text}'")
+@then("page includes text '{text}'")
 def step(context, text):
     WebDriverWait(context.browser, 120).until(
         EC.presence_of_element_located((By.XPATH, '//*[contains(text(), "%s")]' % text))

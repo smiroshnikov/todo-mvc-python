@@ -17,7 +17,6 @@ import sys
 
 
 def main():
-    # print command line arguments
 
     arg = sys.argv[1]
     print "Provided word was ->" + arg
